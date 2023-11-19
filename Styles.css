@@ -1,0 +1,473 @@
+/*styles applying to whole document*/
+* {font-family: Verdana, Geneva, Tahoma, sans-serif}
+
+/*styles for the header and nav elements*/
+.top-block {
+    background-image: url(keyboard.jpg);
+    background-size: 100%;
+    box-shadow: 0px 0px 15px black;
+}
+header {
+    background-color: rgba(255, 255, 255, 0);
+    max-height: 100px;
+    color: white;
+    font-size: 3em;
+    overflow: auto;
+    padding: 0% 0% 0% 2%;
+    line-height: 3em;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0);
+    padding:0%  
+}
+
+ul.navmenu {
+    background-color: rgba(255, 255, 255, 0);
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: center;
+    padding: 0%;
+}
+
+ul.navmenu li {
+    background-color: aliceblue;
+    margin: 4px;
+    list-style-type: none;
+    width: 100%;
+    height: 90%;
+    padding: 0%;
+    text-align: center;
+    vertical-align: center;
+    font-weight: bold;
+    border-radius: 20px;
+
+}
+
+ul.navmenu a {
+    display: block;
+    width: 100%;
+    height: 100%; 
+    color: black;
+    font-size: 1.5em;
+    text-decoration: none;
+    line-height: 68px;
+    padding: 0px 12px;
+}
+
+/*styles for the background*/
+body {
+    background-image: linear-gradient(black, darkblue, rgb(7, 122, 160));
+    padding: 2%;
+}
+
+/*styles for the text in the document*/
+h1.text{
+    color: whitesmoke;
+    font-size: 40px;
+}
+
+h2.text {
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+p.text {
+    color: whitesmoke;
+    font-size: 25px;
+}
+
+ul.text {
+    color: whitesmoke;
+    font-size: 25px;
+    font-style: italic; 
+}
+
+dl.text {
+    color: whitesmoke;
+    font-size: 25px;
+}
+
+dd {
+    color: lightblue;
+}
+
+figcaption.text {
+    color: whitesmoke;
+    font-size: 20px;
+    font-style: italic; 
+}
+table.text {
+    color: whitesmoke;
+    font-size: 20px;
+}
+/*Styles for my image on the home page*/
+.containerhome {
+    display: flex; 
+    align-items: center;
+    justify-content: center
+  }
+  
+  .Annalie {
+    text-align: center;
+    padding-left: 0px; 
+    border: 5px solid white; 
+    border-radius: 50%;
+    max-width: 70%
+  }
+  
+  .imageap {
+    text-align: center;
+    box-sizing: border-box;
+    flex-basis: 50%;
+  }
+  
+  .divtext {
+    font-size: 40px;
+    padding-left: 10px;
+  }
+
+  /*styles for blockquote on homepage*/
+  aside {
+    background-color: beige;
+    border: 2px solid black;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 5px black;
+    display: inline-block; 
+    margin: 0 auto;
+    width: 400px;
+}
+
+  .quotecontainer {
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .quote {
+    color: black;
+    font-size: 40px;
+}
+
+/*styles for footer element*/
+footer {
+    color: whitesmoke;
+    font-size: small;
+    text-align: right;
+}
+
+/*Styles for the projects page*/
+.projectimg {
+    text-align: center;
+    padding-left: 0px; 
+    border: 5px solid white; 
+    border-radius: 2%;
+    max-width: 40%
+  }
+
+  /*Styles for links*/
+  a::link {
+    color: white;
+  }
+
+  a::hover {
+    color: yellow;
+  }
+
+  a::visited {
+    color:orange;
+  }
+
+/*Other styles for skills page*/
+.badgeimg {
+    width: 20%;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px, solid, white;
+    padding: 10px;
+}
+
+th, td {
+    padding: 10px;
+}
+  /*Style for Skills page - animation*/
+  .container.box{
+    margin:0;
+    padding:0;
+  }
+  .container {
+    background: #f0f0f0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 36vh;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  .box {
+    border-radius: 20px;
+    width: 60px;
+    height: 60px;
+    background: #f0f0f0;
+    box-shadow:  0 0 0 #cccccc,
+                 0 0 0 #ffffff,
+                  10px 10px 10px #cccccc inset,
+                  -10px -10px 10px #ffffff inset;
+    animation: anime 3s cubic-bezier(0.16, 1, 0.3, 1) 1s infinite alternate;
+    /* animation-fill-mode: forwards; */
+  }
+
+  @keyframes anime {
+    0% {
+      width: 60px;
+      height: 60px;
+      background: #f0f0f0;
+      box-shadow:  0 0 0 #cccccc,
+                   0 0 0 #ffffff,
+                    10px 10px 10px #cccccc inset,
+                    -10px -10px 10px #ffffff inset;
+    }
+    25% {
+      width: 60px;
+      height: 60px;
+      background: #f8f8f8;
+      box-shadow:  10px 10px 10px #cccccc,
+                   10px 10px 10px #ffffff,
+                   0 0 0 #cccccc inset,
+                   0 0 0 #ffffff inset;
+    }
+    50% {
+      width: 60px;
+      height: 240px;
+      background: #f8f8f8;
+      box-shadow:  10px 10px 10px #cccccc,
+                   10px 10px 10px #ffffff,
+                   0 0 0 #cccccc inset,
+                   0 0 0 #ffffff inset;
+    }
+    100% {
+      width: 480px;
+      height: 240px;
+      background: #fafafa;
+      box-shadow:  40px 40px 40px #cccccc,
+                   0 0 0 #ffffff,
+                   0 0 0 #cccccc inset,
+                   2px 2px 2px #ffffff inset;
+    }
+  }
+
+/*Styling for the animation of the education and work page*/
+.Educontainer {
+  font-family: sans-serif;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%); 
+  width: 100%;
+  margin-top: 100px;
+}
+
+.Educontainer span {
+  text-transform: uppercase;
+  display: block;
+}
+
+.text1 {
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: 8px;
+  position: relative;
+  animation: writing 3s 1;
+}
+
+.text2 {
+  font-size: 70px;
+  color: rgb(86, 86, 213);
+}
+
+@keyframes writing {
+  0% {
+    color: black;
+    margin-bottom: -4px;
+  }
+  30% {
+    letter-spacing: 25px;
+    margin-bottom: -4px;
+  }
+  85% {
+    letter-spacing: 8px;
+    margin-bottom: -4px;
+  }
+  100% {
+    letter-spacing: 10px;
+    margin-bottom: -4px
+  }
+}
+/*Styling for the contact page*/
+form {
+    box-sizing: border-box;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: hsl(0, 0%, 100%);
+    border: 4px solid hsl(0, 0%, 90%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+.iFirstName.iLastName.iEmail {
+    display: inline;
+    max-width: 3000px;
+    color: black;
+    float: right;
+}
+
+.submit {
+    background-color: blue;
+    color: white;
+    font-size: 60px;
+}
+
+.contactbody {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contact {
+  min-height: 100vh;
+  padding: 2em;
+  background-image: url();
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact > div {
+  background: #fff;
+  padding: 2.5em;
+  border-radius: 10px;
+  box-shadow: 0 0 2em rbga(0, 0, 0, 0.3);
+}
+
+.contact h1 {
+  font-size: 2.5em;
+}
+
+.contact p {
+  max-width: 400px;
+  line-height: 27px;
+  color:#a0a0a0;
+  margin: 1em 0 2em 0;
+}
+
+.contact form {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.contact input, .contact textarea {
+  border:none;
+  padding: 0.8em;
+  width: 100%;
+  border-radius: 5px;
+  margin: 0.5em 0.1em 0;
+  font-size: 1.1em;
+  background: #eee;
+  color: #969696;
+}
+
+.contact label {
+  color: #a0a0a0;
+}
+
+.contact textarea {
+  resize: none;
+  height: 8em;
+  font-family: sans-serif;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  outline: none;
+}
+
+.contact input::placeholder, .contact textarea::placeholder {
+  color: #bababa;
+}
+
+.contact button {
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  padding: 0.8em;
+  background-color: #ff742e;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 1.2em;
+  transition: 0.3s;
+}
+
+.contact button:hover {
+  background-color: #e16628;
+}
+
+@media screen and (max-width: 500px) {
+  .contact {font-size: 14px;}
+}
+/*Styles for links at bottom of Contact page*/
+.icons {
+    display: inline;
+}
+
+ul.icons {
+    background-color: rgba(255, 255, 255, 0);
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: center;
+    padding: 0%;
+}
+
+ul.icons li {
+    margin: 4px;
+    list-style-type: none;
+    max-width: 50%;
+    padding: 0%;
+    text-align: center;
+    vertical-align: center;
+    font-weight: bold;
+    border-radius: 20px;
+
+}
+
+ul.icons a {
+    display: block;
+    max-width: 100%; 
+    color: black;
+    font-size: 1.5em;
+    text-decoration: none;
+    line-height: 68px;
+    padding: 0px 12px;
+}
+
+ul.icons img {
+  max-width: 50%;
+}
